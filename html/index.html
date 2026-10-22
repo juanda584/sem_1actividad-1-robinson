@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencistas</title>
+    
+</head>
+<marquee style="color: rgb(221, 215, 215); background-color: #c01220; padding: 9px;">
+  <STRong>SEAN TODOS BIENVENIDOS A NUESTRA PAGINA INFORMATIVA DONDE PODRAN ENCONTRAR VARIOS TIPOS DE PERFILES DEPENDIENDO DE LAS NESECIDADES DE CADA PERSONA, PARA MAS INFORMACION CONTACTE CPN NUESTRO PERSONAL </STRong>
+</marquee><style>
+  
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #f6f6f8; color: #172532;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  .page {
+    width: min(100%, 850px); min-height: 461px; margin: 0 auto;
+    padding: 38px 50px 26px;
+    background: #f6f6f8;
+  }
+  .heading { display:flex; align-items:center; gap:15px; margin-bottom:39px; }
+  .logo {
+    width:37px; height:41px; flex:0 0 37px; position:relative;
+    background:#df1938; clip-path:polygon(50% 0, 96% 24%, 96% 75%, 50% 100%, 4% 75%, 4% 24%);
+  }
+  .logo:before {
+    content:""; position:absolute; width:8px; height:8px; border-radius:50%;
+    background:white; left:14px; top:10px;
+    transition:1s all;
+    
+  }
+  .logo:after {
+    content:""; position:absolute; width:17px; height:8px; border-radius:10px 10px 4px 4px;
+    background:white; left:10px; top:21px;
+    transition: 1s all;
+    .logo:after{
+color: #c01220;
+    }
+  }
+  .heading p { margin:0; font-size:14px; color:#303b45; }
+  .heading strong { font-size:16px; letter-spacing:-.3px; }
+  .heading span { color:#6b6b70; }
+  .experts {
+    display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:19px;
+    text-align:center;
+  }
+  .expert { min-width:0; }
+  .portrait {
+    width:108px; height:123px; margin:0 auto 9px; position:relative;
+    clip-path:polygon(50% 0, 99% 25%, 99% 75%, 50% 100%, 1% 75%, 1% 25%);
+    background:#dce5e9;
+  }
+  .portrait img {
+    width:100%; height:100%; object-fit:cover; object-position:center;
+    display:block;
+  }
+  .expert h2 { font-size:12px; line-height:1.2; margin:0 0 3px; font-weight:700; color:#172532; }
+  .role { font-size:10px; color:#d51f3c; font-weight:700; margin:0 0 10px; }
+  .bio {
+    font-family: Georgia, "Times New Roman", serif; color:#68686b;
+    font-size:13px; line-height:1.38; min-height:54px; margin:0 0 10px;
+  }
+  .socials { display:flex; justify-content:center; gap:5px; }
+  .social {
+    width:20px; height:22px; background:#5c91a7; color:#fff; display:flex;
+    align-items:center; justify-content:center; font-size:10px; font-weight:bold;
+    clip-path:polygon(50% 0, 96% 25%, 96% 75%, 50% 100%, 4% 75%, 4% 25%);
+    cursor:pointer;
+    transition:background-color .2s ease, filter .2s ease, transform .2s ease;
+  }
+  .social:hover {
+    background:#168fc1;
+    filter:drop-shadow(0 0 5px rgba(22, 143, 193, .9));
+    transform:scale(1.15);
+  }
+  .more {
+    display:flex; align-items:center; justify-content:center; gap:6px;
+    width:171px; height:34px; margin:21px auto 0; border:0; border-radius:7px;
+    background:#df1938; color:white; font-size:11px; font-weight:bold;
+    cursor:pointer;
+    transition:background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .more:hover {
+    background:#c01220;
+    box-shadow:0 0 10px rgba(192, 18, 32, .7);
+    transform:scale(1.05);
+  }
+  .person-icon { width:10px; height:10px; position:relative; display:inline-block; }
+  .person-icon:before { content:""; position:absolute; width:5px; height:5px; border-radius:50%; background:white; left:2px; top:0; }
+  .person-icon:after { content:""; position:absolute; width:10px; height:5px; border-radius:5px 5px 2px 2px; background:white; left:0; bottom:0; }
+  @media (max-width: 700px) {
+    .page { padding:26px 20px; }
+    .experts { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:28px; }
+    .heading { margin-bottom:28px; }
+  }
+  @media (max-width: 390px) {
+    .experts { grid-template-columns:1fr; }
+    .bio { min-height:0; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header class="heading">
+      <div class="logo" aria-hidden="true"></div>
+      <p><strong>CONFERENCISTAS</strong>/Conoce a los expertos</p>
+    </header>
+
+    <section class="experts" aria-label="Conferencistas">
+      <article class="expert">
+        <div class="portrait"><img src="/html/img/perfil1.jpeg"></div>
+        <h2>Alejandro Morales</h2>
+        <p class="role">Director de Contenido</p>
+        <p class="bio">Especializado en generar leads a través de estrategias de marketing de contenidos.</p>
+        <div class="socials" aria-label="Redes sociales"><span class="social">f</span><span class="social">♥</span><span class="social">G+</span><span class="social">in</span><span class="social">◎</span></div>
+      </article>
+      <article class="expert">
+        <div class="portrait"><img src="/html/img/perfil3.jpeg" alt="Carolina Fernández"></div>
+        <h2>Carolina Fernández</h2>
+        <p class="role">Co-Fundadora</p>
+        <p class="bio">Experta en estrategias de redes sociales para impulsar el crecimiento de negocios.</p>
+        <div class="socials" aria-label="Redes sociales"><span class="social">f</span><span class="social">♥</span><span class="social">G+</span><span class="social">in</span><span class="social">◎</span></div>
+      </article>
+      <article class="expert">
+        <div class="portrait"><img src="/html/img/perfil2.jpeg" alt="David Gómez"></div>
+        <h2>David Gómez</h2>
+        <p class="role">Influencer Marketing Manager</p>
+        <p class="bio">Colaboraciones estratégicas con influencers para mayor visibilidad de marcas.</p>
+        <div class="socials" aria-label="Redes sociales"><span class="social">f</span><span class="social">♥</span><span class="social">G+</span><span class="social">in</span><span class="social">◎</span></div>
+      </article>
+      <article class="expert">
+        <div class="portrait"><img src="/html/img/perfil4.jpeg" alt="Martín Vargas"></div>
+        <h2>Martín Vargas</h2>
+        <p class="role">Director de Automatización</p>
+        <p class="bio">Optimiza la generación y seguimiento de prospectos mediante automatización.</p>
+        <div class="socials" aria-label="Redes sociales"><span class="social">f</span><span class="social">♥</span><span class="social">G+</span><span class="social">in</span><span class="social">◎</span></div>
+      </article>
+    </section>
+    <button class="more" type="button"><span class="person-icon" aria-hidden="true"></span> MÁS INFORMACIÓN</button>
+  </main>
+</body>
+
+</body>
+</html>
